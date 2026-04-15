@@ -98,15 +98,23 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== PRICING ===== */
 .pricing { background: #fff; }
-.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
-.pricing-card { border: 1px solid var(--border); border-radius: 8px; padding: 36px 28px; position: relative; }
-.pricing-card.featured { border-color: var(--gold); box-shadow: 0 8px 32px rgba(184,134,11,.12); }
-.pricing-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; white-space: nowrap; }
-.pricing-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 8px; }
-.pricing-examples { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
-.pricing-card ul { list-style: none; margin-bottom: 28px; }
-.pricing-card ul li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
-.pricing-card ul li span { font-weight: 600; color: var(--gold); }
+.pricing-table-wrap { overflow-x: auto; margin-bottom: 40px; }
+.pricing-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.pricing-table th { background: var(--black); color: #fff; padding: 14px 16px; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: .04em; line-height: 1.4; }
+.pricing-table th span { display: block; font-weight: 400; font-size: 11px; opacity: .7; margin-top: 3px; }
+.pricing-table th:first-child { text-align: left; }
+.pricing-table tbody tr { border-bottom: 1px solid var(--border); }
+.pricing-table tbody tr:hover { background: var(--cream); }
+.pricing-table td { padding: 14px 16px; text-align: center; }
+.pricing-table td:first-child { text-align: left; }
+.pricing-table td strong { display: block; }
+.pricing-table td em { font-size: 12px; font-style: normal; color: var(--text-muted); }
+.pricing-additional { background: var(--cream); border-radius: 8px; padding: 28px 32px; margin-top: 24px; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.pricing-additional h3 { font-family: 'Playfair Display', serif; font-size: 20px; white-space: nowrap; }
+.pricing-additional ul { list-style: none; display: flex; gap: 32px; flex-wrap: wrap; flex: 1; }
+.pricing-additional ul li { display: flex; gap: 8px; font-size: 15px; align-items: center; }
+.pricing-additional ul li span { font-weight: 700; color: var(--gold); }
+.pricing-cta { text-align: center; margin-bottom: 20px; }
 .pricing-note { text-align: center; font-size: 13px; color: var(--text-muted); }
 
 /* ===== CONTACT ===== */
